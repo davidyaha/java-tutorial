@@ -1,0 +1,36 @@
+
+public class ChatServer {
+
+
+  String RoomList[];
+	//**Write createRoom method that will add a new ArrayList to RoomList.
+	//didnt understand what to do here, guess i dont know how to creat and array that on each cell he got a list**\\
+	public void creatRoom() {
+		this.RoomList[0]="Empty";
+		this.RoomList[1]="Empty";
+		this.RoomList[2]="Empty";
+	}
+	public String enterRoom(int Num, String Name){
+		if (this.RoomList[Num]==Name) do
+		return System.out.print("This room already got your name");//dunno why's an error her\\
+		else
+			this.RoomList[Num]=Name;
+		
+		
+	public leaveRoom (int Num, String Name){
+		this.RoomList[Num]="Empty";
+		//would done an if or a while to search to room's name on the list on my array to see the index i shouldve deleted
+	}
+	//Wouldve added another if statment to check wether the room exists but i dont know what will i get in return for going to this.RoomList[Num]= ??? if the num is beyond the list(eg :Num=5)
+	}
+		
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ChatServer S;
+		System.out.println(S.RoomList[0]);
+	}
+
+}
