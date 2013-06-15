@@ -1,36 +1,19 @@
+I have inserted all of your code into a file called ChatServer.java
 
-public class ChatServer {
+Some notes:
 
+1. I wanted you to use ArrayList class. (see comments)
+2. System.out.print() -> this method does not return any value so you cannot write it after return statement.
+in your code you should have just returned the string of the error.
+3. no need for do on if.
+4. read about Exceptions on java
+5. you are right about your question of the index. 
+trying to get a cell that is not in the array's range will get your program to be terminated because of an error. 
+unless you handle the error. for more information about it, read about Exceptions.
+6. The solution that i wrote has a couple of bugs. try to find and fix them. read about debugging in order to do it.
 
-  String RoomList[];
-	//**Write createRoom method that will add a new ArrayList to RoomList.
-	//didnt understand what to do here, guess i dont know how to creat and array that on each cell he got a list**\\
-	public void creatRoom() {
-		this.RoomList[0]="Empty";
-		this.RoomList[1]="Empty";
-		this.RoomList[2]="Empty";
-	}
-	public String enterRoom(int Num, String Name){
-		if (this.RoomList[Num]==Name) do
-		return System.out.print("This room already got your name");//dunno why's an error her\\
-		else
-			this.RoomList[Num]=Name;
-		
-		
-	public leaveRoom (int Num, String Name){
-		this.RoomList[Num]="Empty";
-		//would done an if or a while to search to room's name on the list on my array to see the index i shouldve deleted
-	}
-	//Wouldve added another if statment to check wether the room exists but i dont know what will i get in return for going to this.RoomList[Num]= ??? if the num is beyond the list(eg :Num=5)
-	}
-		
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		ChatServer S;
-		System.out.println(S.RoomList[0]);
-	}
+Regardless, that was a pretty good start. keep at it.
+The next part is already on the server.
 
-}
+Good luck,
+David
